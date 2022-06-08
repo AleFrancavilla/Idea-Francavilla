@@ -50,7 +50,7 @@ background-color:lightgray;
     margin: 10px
 }
 
-.header nav ul li :hover{ background: yellowgreen;}
+.header nav ul li:hover{ background: yellowgreen;}
 
 .header nav ul li a{
     text-decoration: none;
