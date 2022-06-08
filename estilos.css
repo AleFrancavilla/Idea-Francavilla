@@ -70,7 +70,9 @@ background-color:lightgray;
     background-color: darkgreen;
     }
 
- 
+    .titulo1{ background-color: #63d471;
+        background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    }   
     
 
 .tituloUno{text-align: center;
@@ -157,6 +159,13 @@ body{background-color: darkseagreen;}
 }
 
 
+.sectionTwo .foto img{ transition: all 2s;  
+ }
+
+.sectionTwo .foto img:hover{
+    width: 400px;
+    height: 400px;;
+}
 
 
 .sectionOne article .divTitulo{
