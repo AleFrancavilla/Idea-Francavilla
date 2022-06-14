@@ -117,7 +117,7 @@ body{background-color: darkseagreen;}
 
 /*SERVICIOS*/
 
-   
+ /* use BS   
  .serviciosh1{
         text-align: center;
         font-size: 35px;
@@ -128,10 +128,10 @@ body{background-color: darkseagreen;}
         line-height: 100px;
         background-color: darkgreen;
    
- }
- .parUno{
-    font-size: 20px;
-    color: green;
+ }*/
+ .h4{
+    
+    color: black;
     background-color: lemonchiffon;
     text-align: justify;
     font-weight: 500;
@@ -159,10 +159,10 @@ body{background-color: darkseagreen;}
 }
 
 
-.sectionTwo .foto img{ transition: all 2s;  
+.sectionTwo .img-fluid { transition: all 2s;  
  }
 
-.sectionTwo .foto img:hover{
+.sectionTwo .img-fluid:hover{
     width: 400px;
     height: 400px;;
 }
@@ -180,13 +180,22 @@ h4{
 }
 
 /*FOOTER*/
-.footer{
+/*.footer{
     color: green;
     font-size: small;
     background-color: lightgrey;  
-    margin-top: 200px;
+    margin-top: 300px;
+   
+}*/
+
+.py-5{ background-color:lightgrey;
+       margin-top: 250px;
+
+}
+h5{ color: darkgreen;
    
 }
+
 
 /*--en Noticias--*/
 
@@ -198,7 +207,6 @@ h4{
     background-color:green;
     margin-top: 5px;
     margin-bottom: 15px;
-
 }
 
 .linksnoticias article{text-align: center;}
@@ -309,13 +317,16 @@ h2{font-family: sans-serif;
     text-align: left;
 
 }
+
+/* Pongo Grids como comentario porque las fotos aplique BS img fluid
+
 .sectionTwo{
    
-    display:grid;/*se le aplica al contenedor de fotos*/
+    display:grid;/*se le aplica al contenedor de fotos
     grid-template-columns: 100%;
     grid-template-rows: repeat(6,1fr)      
      
-}
+}*/
 
 .parUno{font-size: 10px;}
 

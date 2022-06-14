@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Servicio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="estilos.css">
 </head>
 
@@ -26,9 +27,13 @@
         <a href="#abajo">Ir Abajo</a>
 
 
-    <h1 class="serviciosh1"> Servicios Ofrecidos por nosotros</h1>
+   <!-- <h1 class="serviciosh1"> Servicios Ofrecidos por nosotros</h1>-->
+   <h1>
+    Servicios ofrecidos por Graingateway
+    <small class="text-muted">Detallamos a continuacion</small>
+  </h1>
    
-     <div class="parUno">   Graingateway cuenta con una acreditada experiencia, profundo conocimiento del sector agrario y especialización en la intermediación de compra y venta de commodities, nos impulsa a tener una visión diferente a la hora de la toma de decisiones.
+     <div class="h4">   Graingateway cuenta con una acreditada experiencia, profundo conocimiento del sector agrario y especialización en la intermediación de compra y venta de commodities, nos impulsa a tener una visión diferente a la hora de la toma de decisiones.
         Nuestra característica principal es ser una empresa joven y dinámica.</div>
 
     </Header>
@@ -39,10 +44,11 @@
                 <div>Corretaje internacional de productos del agro y agroindustriales. </div>
                 <div>Asesoría en comercio exterior para exportacion/importacion de productos del agro a granel.</div>
                 <div>Asesoría comercial para proyectos de inversión en agroindustria.</div>
-            </article>
-      </Section>
+            </article> 
+        </section>
+   
      
-
+<!-- comento para acomodar las fotos con BS img fluid
         <Section class="sectionTwo">
            
                 <article class="foto"><img src="aceite de girasol.jpg" alt="Aceite de Girasol">
@@ -58,19 +64,89 @@
                 <article class="foto"><img src="pelletsdecascaradesoja.jpg" alt="Pellets">
                 <h4>Pellets de Cascara de Soja</h4></article>
         
-        </Section>
+        </Section>-->
+       
+        <Section class="sectionTwo">
+                           
+            <article><img src="aceite de girasol.jpg" class="img-fluid" alt="Aceite de Girasol">
+            <h4>Aceite de Girasol</h4></article>
+            <article><img src="soja2.jpg" class="img-fluid" alt="Semillas de Soja">
+            <h4>Semillas de Soja</h4></article>
+            <article><img src="trigo.jpg"class="img-fluid" alt="Trigo">
+            <h4>Trigo</h4></article>
+            <article ><img src="maiz.jpg"class="img-fluid" alt="Maiz">
+            <h4>Maiz</h4></article>
+            <article><img src="aceite de soja.jpg" class="img-fluid" alt="Aceite de Soja">
+            <h4>Aceite de soja</h4></article>
+            <article> <img src="pelletsdecascaradesoja.jpg" class="img-fluid" alt="">
+            <h4>Pellets de Cascara de Soja</h4></article>
+       
+       </Section>
+
     </main>
 
-   
+    <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+                              
+            <div class="col-4 offset-1">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2022 Company, Inc. Ale Francavilla reserved</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+       <!--aca termina el footer de BS-->
 
-    <footer id="abajo">
+   <!-- <footer id="abajo">
         <section>
             <article class="footer">  Copy2022 Web Alejandra Francavilla </article>
                
         </section>
      
         <a href="#arriba">Ir arriba</a>
-    </footer>
-    
+    </footer>-->
+
+
+
+    <!-- Javascrpt de Bootstrap local-->
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>

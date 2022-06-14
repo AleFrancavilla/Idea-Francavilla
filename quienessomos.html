@@ -2,7 +2,8 @@
 <html>
 <head>
         <title>Quienes Somos</title>
-    <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="estilos.css">
 
 </head>
 <body>
@@ -24,7 +25,8 @@
     </header>
 
     <main> 
-        <h1 class="titulo1">Graingateway</h1>
+        <!--agrego un div container con los parrafos para que sean bien responsive-->
+       <div class="container-fluid"> <h1 class="titulo1">Graingateway</h1>
 
         <h2>Quienes Somos?</h2>
         <p> Somos una empresa especializada en el mercado internacional de granos, con alta experiencia en el rubro
@@ -43,20 +45,69 @@
             El comercio internacional de granos y productos del agro es una piedra fundamental de la cadena alimentaria mundial.
             De la mano con el incremento en la población mundial crece también la necesidad de garantizar la producción y la distribución de productos agrícolas de manera sustentable y económica.
             El know-how especifico para el comercio internacional de estos productos es un bien escaso y es la clave para el éxito de todo emprendimiento en este mercado.
-        </p>
+        </p> </div>
        <div class="foto4"> <img src ="https://media.istockphoto.com/photos/business-document-report-on-paper-and-tablet-with-sales-data-and-picture-id1182777182?s=612x612" width="450"        
         alt="Trabajando para lograr los mejores negocios"></div>
 
       
         </main>
-
-    <footer id="abajo">
+        <div class="container">
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-2">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-2">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+                                  
+                <div class="col-4 offset-1">
+                  <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <div class="d-flex w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          
+              <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2022 Company, Inc. Ale Francavilla reserved</p>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+    <!--<footer id="abajo">
         <section>
             <article> Copy2022 Web Alejandra Francavilla</article>
     
             <a href="#arriba">Ir arriba</a>
-        </section>
-    
+        </section>-->
+
+    <!-- Javascrpt de Bootstrap local-->
+    <script src="js/bootstrap.js"></script>
     
 </body>
 </html>
