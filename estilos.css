@@ -74,14 +74,25 @@ background-color:lightgray;
         background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
     }   
     
-
 .tituloUno{text-align: center;
     font-size: 48px;
     color:wheat;
     font-family: sans-serif;
     position: relative;
     margin-top: 50px;
+
+    animation-name: animacionindex;
+    animation-duration: 5s;
+    position:relative;
+    animation-iteration-count: 3;
     }
+    @keyframes animacionindex {
+
+        0%{left: 0;top:0px;}
+        50%{left: 300px;right:300px}
+        100%{left: 0px; right:0px}
+    }
+    
 .tituloDos{text-align: center;
     font-size: 40px;
     color:wheat;
@@ -129,14 +140,15 @@ body{background-color: darkseagreen;}
         background-color: darkgreen;
    
  }*/
- .h4{
+ .h4-parrafo{
     
-    color: black;
+    color: darkgreen;
     background-color: lemonchiffon;
     text-align: justify;
     font-weight: 500;
     padding: 5px;
     margin:10px;
+    font-family: sans-serif;
 
     }
 .servicioConteiner h3{
@@ -188,7 +200,7 @@ h4{
    
 }*/
 
-.py-5{ background-color:lightgrey;
+.py-5{ background-color:rgb(143, 187, 143);
        margin-top: 250px;
 
 }
@@ -225,9 +237,21 @@ h5{ color: darkgreen;
      grid-template-columns: auto auto;
      grid-template-rows: auto;
      justify-content: space-around;
+    animation-name: animacionoti;
+    animation-duration: 5s;
+    position:relative;
+    animation-iteration-count: infinite;
+    }
+    @keyframes animacionoti {
+
+        0%{left: 0;top:0px;}
+        25%{left:300px;top:0px}
+        50%{left: 300px;top:300px}
+        75%{left: 0px; top: 300px;}
+        100%{left: 0px; top:0px}
 
     }
-    
+        
 .tituloTres{text-align: start;
     font-size: 20px;
     color: black;
@@ -330,8 +354,7 @@ h2{font-family: sans-serif;
 
 .parUno{font-size: 10px;}
 
-.h4{ font-size: 10px;
-    text-align: left;}
+
 
 /*Noticias hoy*/
 
