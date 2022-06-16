@@ -50,7 +50,7 @@ background-color:lightgray;
     margin: 10px
 }
 
-.header nav ul li:hover{ background: yellowgreen;}
+.header nav ul li:hover{ background: rgb(12, 167, 89);}
 
 .header nav ul li a{
     text-decoration: none;
@@ -156,7 +156,6 @@ body{background-color: darkseagreen;}
         font-size: 20px;
         color: wheat;
         width: 100%; 
-
         background-color: gray; 
         margin:10px;
 }
@@ -205,10 +204,7 @@ h4{
 
 }
 h5{ color: darkgreen;
-   
-}
-
-
+ }
 /*--en Noticias--*/
 
 .noticiash1{ text-align: left  ;
@@ -312,7 +308,6 @@ h2{font-family: sans-serif;
 #abajo{ color: beige;
     font-size: small;}
 
-   
 
     
 /*MEDIA QUERIES*/
