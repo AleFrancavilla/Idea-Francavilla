@@ -10,7 +10,7 @@
      }
 
     
-.gridConteiner{
+.gridContainer{
 
     display:grid;
     height: 100vh;
@@ -61,20 +61,29 @@ background-color:lightgray;
     
 }
    
-.titulo1{text-align: center;
+.tituloUno{text-align: center;
     font-size: 60px;
     color: wheat;
     font-family: Helvetica;
     width: 100%; 
-   height: 100px;
+    height: 100px;
     background-color: darkgreen;
     }
 
-    .titulo1{ background-color: #63d471;
+    .parrafouno{background-color:darkseagreen;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 20px;
+        left: auto;
+        width: 100%;      
+        }
+    
+
+    .tituloDos{ background-color: #63d471;
         background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
     }   
     
-.tituloUno{text-align: center;
+.tituloTres{text-align: center;
     font-size: 48px;
     color:wheat;
     font-family: sans-serif;
@@ -93,7 +102,7 @@ background-color:lightgray;
         100%{left: 0px; right:0px}
     }
     
-.tituloDos{text-align: center;
+.tituloTres{text-align: center;
     font-size: 40px;
     color:wheat;
     font-weight: bold;
@@ -101,15 +110,7 @@ background-color:lightgray;
     top: 100px;
     font-family: sans-serif;
     }
-.parrafouno{background-color:darkseagreen;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding: 20px;
-    left: auto;
-    width: 100%;      
-    }
 
-/* Etiquetas*/
 
 .gridConteiner{font-family: 'Roboto', sans-serif
 }
@@ -169,7 +170,12 @@ body{background-color: darkseagreen;}
     background-color: lightgoldenrodyellow;
 }
 
+.tituloCuatro{
+    text-align: left;
+    font-size: 20px;
+    margin:10px;
 
+}
 .sectionTwo .img-fluid { transition: all 2s;  
  }
 
@@ -236,7 +242,7 @@ h5{ color: darkgreen;
     animation-name: animacionoti;
     animation-duration: 5s;
     position:relative;
-    animation-iteration-count: infinite;
+    animation-iteration-count:2;
     }
     @keyframes animacionoti {
 
@@ -422,9 +428,8 @@ h4{ font-size: 20px;
         grid-template-columns: auto auto auto;
         grid-template-rows:auto auto;
         justify-content: space-around;
-            
-        background-color: darkolivegreen;
-      
+        background-color: darkolivegreen; 
+             
     }
 
 }

@@ -1,0 +1,56 @@
+@import "../base/variables";
+@import "../base/generales";
+
+main .tituloUno{
+    text-align: center;
+    font-size: 60px;
+    color: wheat;
+    width: 100%; 
+    height: 100px;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+            
+    .parrafouno{ 
+    background-color:$color-secundario2;
+    font-size: 20px;
+    padding: 20px;
+    left: auto;
+    width: 100%;    }         
+                
+           
+
+main section{
+ .tituloDos{ 
+    background-color: $color-principal;
+    text-align: center;
+    font-size: 48px;
+    color:wheat;
+    position: relative;
+    margin-top: 50px;
+    }
+
+ .tituloTres{
+    text-align: center;
+    font-size: 48px;
+    color:wheat;
+    position: relative;
+    font-weight: bold;
+    margin-top: 50px;
+
+
+    animation-name: animacionindex;
+    animation-duration: 5s;
+    position:relative;
+    animation-iteration-count: 3;
+    }
+    @keyframes animacionindex {
+
+        0%{left: 0;top:0px;}
+        50%{left: 300px;right:300px}
+        100%{left: 0px; right:0px}
+
+ }
+}
+
+
+

@@ -1,0 +1,18 @@
+//mediaQ SmartPhone
+@media(max-width:480px){
+  
+    .main{background-color: $color-principal;}
+    .tituloUno{font-size: 40px;}
+    .tituloDos{font-size: 25px;
+    margin-top: 50px;}
+    .tituloUno{font-size:20;}
+    .parrafouno{ font-size: 15px; 
+                  text-align: justify;}
+                  
+   .header nav ul li{
+                   display: flex;
+                   flex-flow: column nowrap;
+                   background-color:lightgray;
+                
+                }
+            }

@@ -1,0 +1,26 @@
+
+@import "../base/variables";
+@import "../base/mediaq.scss";
+
+.header{
+    nav{
+        ul{
+            display:flex;
+            list-style: none;
+            justify-content: space-around;  
+            align-items : center ;
+            background-color:lightgray;
+            li{ margin: 10px;
+                a{  text-decoration: none;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    color: $color-principal;
+                    font-family: sans-serif;}
+            
+           :hover{ background-color: $color-secundario2;}               
+                }              
+            }    
+        }
+        }   
+   
+       
