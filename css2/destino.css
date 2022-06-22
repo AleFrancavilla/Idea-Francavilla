@@ -6,30 +6,6 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 480px) {
-  .main {
-    background-color: darkgreen;
-  }
-  .tituloUno {
-    font-size: 40px;
-  }
-  .tituloDos {
-    font-size: 25px;
-    margin-top: 50px;
-  }
-  .tituloUno {
-    font-size: 20;
-  }
-  .parrafouno {
-    font-size: 15px;
-    text-align: justify;
-  }
-  .header nav ul li {
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: lightgray;
-  }
-}
 .gridContainer {
   display: grid;
   height: 100vh;
@@ -59,30 +35,6 @@ footer {
   background-position: center center;
 }
 
-@media (max-width: 480px) {
-  .main {
-    background-color: darkgreen;
-  }
-  .tituloUno {
-    font-size: 40px;
-  }
-  .tituloDos {
-    font-size: 25px;
-    margin-top: 50px;
-  }
-  .tituloUno {
-    font-size: 20;
-  }
-  .parrafouno {
-    font-size: 15px;
-    text-align: justify;
-  }
-  .header nav ul li {
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: lightgray;
-  }
-}
 .header nav ul {
   display: flex;
   list-style: none;
@@ -167,6 +119,100 @@ main section .tituloTres {
   background-color: darkseagreen;
   margin-top: 250px;
   background-size: contain;
+}
+
+@media (max-width: 480px) {
+  .main {
+    background-color: darkgreen;
+  }
+  .tituloUno {
+    font-size: 40px;
+  }
+  .tituloDos {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .tituloUno {
+    font-size: 20;
+  }
+  .parrafouno {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .header nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: lightgray;
+  }
+}
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 1023px) {
+  .gridConteiner {
+    background-image: url("https://img.freepik.com/foto-gratis/toma-aerea-hermoso-campo-verde-agricola-cerca-montanas_181624-29589.jpg?w=1060");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .titulo1 {
+    font-size: 45px;
+  }
+  .tituloDos {
+    font-size: 25px;
+  }
+  .tituloUno {
+    font-size: 20;
+  }
+  .parrafouno {
+    font-size: 20px;
+    text-align: justify;
+  }
+  .header nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  /*Servicios*/
+  .serviciosh1 {
+    font-size: 25px;
+  }
+  .sectionOne div {
+    font-size: 15px;
+    text-align: left;
+  }
+  .sectionOne article .divTitulo {
+    font-size: 20px;
+  }
+  .sectionTwo {
+    background-color: darkolivegreen;
+    display: grid; /*se le aplica al contenedor de fotos*/
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+/*DESKTOP*/
+@media (min-width: 1024px) {
+  /*Index*/
+  .gridConteiner {
+    background-image: url("https://img.freepik.com/foto-gratis/toma-aerea-hermoso-campo-verde-agricola-cerca-montanas_181624-29589.jpg?w=1060");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  /*Servicios*/
+  .sectionTwo {
+    display: grid; /*se le aplica al contenedor de fotos*/
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    background-color: darkolivegreen;
+  }
 }
 
 /*# sourceMappingURL=destino.css.map */
