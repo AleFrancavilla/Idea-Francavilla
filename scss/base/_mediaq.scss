@@ -1,18 +1,27 @@
+//MAPS
+$variables:(
+    principal: darkgreen,
+    secundario:darkolivegreen,
+    terciario:lightgray,
+);
+$principal: map-get($map: $variables, $key: principal );
+$secundario: map-get($map: $variables, $key: secundario );
+$terciario: map-get($map:$variables, $key: terciario );
 
 @media(max-width:480px){
   
-    .main{background-color: $color-principal;}
+    .main{background-color: $principal;}
     .tituloUno{font-size: 40px;}
     .tituloDos{font-size: 25px;
                margin-top: 50px;}
-    .tituloUno{font-size:20;}
+   
     .parrafouno{ font-size: 15px; 
                   text-align: justify;}
                   
    .header nav ul {
                    display: flex;
                    flex-flow: column nowrap;
-                   background-color:lightgray;
+                   background-color:$terciario;
                 
                 }
             }
@@ -29,7 +38,7 @@
    
        .titulo1{font-size: 45px;}
        .tituloDos{font-size: 25px;}
-       .tituloUno{font-size:20;}
+       .tituloUno{font-size:20px;}
        .parrafouno{ font-size: 20px; 
                      text-align: justify;}
                      
@@ -53,7 +62,7 @@
        font-size: 20px;
    }
    .sectionTwo{
-       background-color: darkolivegreen;
+       background-color: $secundario;
        display:grid;/*se le aplica al contenedor de fotos*/
        grid-template-columns: auto;
        grid-template-rows: auto auto auto; 
@@ -69,7 +78,7 @@
    @media (min-width: 1024px){
       
        /*Index*/
-   .gridConteiner{background-image:url("https://img.freepik.com/foto-gratis/toma-aerea-hermoso-campo-verde-agricola-cerca-montanas_181624-29589.jpg?w=1060")    ;
+   .gridContainer{background-image:url("https://img.freepik.com/foto-gratis/toma-aerea-hermoso-campo-verde-agricola-cerca-montanas_181624-29589.jpg?w=1060")    ;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -82,7 +91,7 @@
            grid-template-columns: auto auto auto;
            grid-template-rows:auto auto;
            justify-content: space-around;
-           background-color: darkolivegreen; 
+           background-color: $terciario; 
                 
        }
    

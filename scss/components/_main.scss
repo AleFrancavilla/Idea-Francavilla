@@ -18,25 +18,35 @@ main .tituloUno{
     width: 100%;    }         
                 
            
+//EXTEND
 
 main section{
  .tituloDos{ 
-    background-color: $color-principal;
-    text-align: center;
-    font-size: 48px;
-    color:wheat;
-    position: relative;
+    @extend .tituloUno;
     margin-top: 50px;
+    background-image: none;
+    background-color: $color-principal;
     }
+    
+    //background-color: $color-principal;
+   // text-align: center;
+  //  font-size: 48px;
+  //  color:wheat;
+  //  position: relative;
+  //  margin-top: 50px;
+
 
  .tituloTres{
-    text-align: center;
-    font-size: 48px;
-    color:wheat;
-    position: relative;
+    //text-align: center;
+   // font-size: 48px;
+  //  color:wheat;
+   // position: relative;
+    //font-weight: bold;
+   // margin-top: 50px;
+    @extend .tituloUno;
     font-weight: bold;
+    background-image: none;
     margin-top: 50px;
-
 
     animation-name: animacionindex;
     animation-duration: 5s;
@@ -52,5 +62,36 @@ main section{
  }
 }
 
+/* Estilos en Contacto*/
 
+//Mixin
 
+@mixin tipografia($letra, $tamano,$color){
+    font-family: $letra;
+    font-size: $tamano;
+    color:$color;
+}
+.formulario { 
+    @include tipografia(sans-serif, 15px, black);
+    width: 500px;
+    background:gray;
+    padding: 20px;
+    margin:auto;
+    margin-top: 70px;
+}
+
+.contacto{ 
+    @include tipografia(sans-serif, 30px, black);
+    font-weight: bold;
+    text-decoration: solid;
+}
+.datoscontacto{
+    @include tipografia(sans-serif,25px , black );
+    font-weight: bold;
+
+}
+.bodycontacto{ 
+    background-color:$color-secundario2;
+}
+
+/*fin estilos para contacto*/

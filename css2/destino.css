@@ -63,7 +63,7 @@ footer {
   box-sizing: border-box;
 }
 
-main .tituloUno {
+main .tituloUno, main section .tituloTres, main section .tituloDos {
   text-align: center;
   font-size: 60px;
   color: wheat;
@@ -81,19 +81,13 @@ main .tituloUno {
 }
 
 main section .tituloDos {
-  background-color: darkgreen;
-  text-align: center;
-  font-size: 48px;
-  color: wheat;
-  position: relative;
   margin-top: 50px;
+  background-image: none;
+  background-color: darkgreen;
 }
 main section .tituloTres {
-  text-align: center;
-  font-size: 48px;
-  color: wheat;
-  position: relative;
   font-weight: bold;
+  background-image: none;
   margin-top: 50px;
   animation-name: animacionindex;
   animation-duration: 5s;
@@ -115,6 +109,38 @@ main section .tituloTres {
   }
 }
 
+/* Estilos en Contacto*/
+.formulario {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: black;
+  width: 500px;
+  background: gray;
+  padding: 20px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.contacto {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  text-decoration: solid;
+}
+
+.datoscontacto {
+  font-family: sans-serif;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+.bodycontacto {
+  background-color: darkseagreen;
+}
+
+/*fin estilos para contacto*/
 .py-5 {
   background-color: darkseagreen;
   margin-top: 250px;
@@ -125,15 +151,12 @@ main section .tituloTres {
   .main {
     background-color: darkgreen;
   }
-  .tituloUno {
+  .tituloUno, main section .tituloDos, main section .tituloTres {
     font-size: 40px;
   }
   .tituloDos {
     font-size: 25px;
     margin-top: 50px;
-  }
-  .tituloUno {
-    font-size: 20;
   }
   .parrafouno {
     font-size: 15px;
@@ -159,8 +182,8 @@ main section .tituloTres {
   .tituloDos {
     font-size: 25px;
   }
-  .tituloUno {
-    font-size: 20;
+  .tituloUno, main section .tituloDos, main section .tituloTres {
+    font-size: 20px;
   }
   .parrafouno {
     font-size: 20px;
@@ -199,7 +222,7 @@ main section .tituloTres {
 /*DESKTOP*/
 @media (min-width: 1024px) {
   /*Index*/
-  .gridConteiner {
+  .gridContainer {
     background-image: url("https://img.freepik.com/foto-gratis/toma-aerea-hermoso-campo-verde-agricola-cerca-montanas_181624-29589.jpg?w=1060");
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,7 +234,7 @@ main section .tituloTres {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     justify-content: space-around;
-    background-color: darkolivegreen;
+    background-color: lightgray;
   }
 }
 

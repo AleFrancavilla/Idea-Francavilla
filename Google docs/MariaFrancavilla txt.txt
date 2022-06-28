@@ -1,0 +1,26 @@
+﻿Ciudad Autónoma de Buenos Aires, 28 de Junio de 2022
+
+
+De: Lic. Maria Alejandra Francavilla
+A: CoderHouse-Desarrollo Web-
+
+
+Ref: Notas de cambios al proyecto de GGW
+
+
+En la presente entrega he realizado los siguientes cambios a mi sitio web:
+* Agregue Mixin para la “tipografía” en el Html “contacto”
+* Incorporé Extend en el SCSS main de Index, reutilizando código para los títulos.
+* En el SCSS de las mediaQ agregue un mapa para los colores
+* Modifique los Title de los 5 HTML
+* Agregue las etiqueta Meta de Description y Keywords
+* Achique las fotos que son parte de del html Servicios optimizando espacio
+
+
+
+
+Sin más saludo a Ud. muy atentamente,
+
+
+Lic. Alejandra Francavilla
+Desarrollo Web-Coder House 2022
