@@ -26,6 +26,7 @@ main section{
     margin-top: 50px;
     background-image: none;
     background-color: $color-principal;
+    
     }
        
 
@@ -133,13 +134,15 @@ h4{ @include tipografia(sans-serif,2rem ,$color-secundario4 );
 /*Fin de estilos Servicio*/
 
 /*Quienes somos*/
-h2{ @extend h4;}
+
     
 .foto4{padding-top: 40px;
      margin-left: 60px;
    }
 
 .parqs1{@include tipografia(sans-serif, 1.5rem,$color-secundario3 );}
+.tituloDos{text-align: center;
+font-style: italic;}
 
 //fin de estilo en Quienes Somos
 
