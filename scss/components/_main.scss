@@ -27,22 +27,10 @@ main section{
     background-image: none;
     background-color: $color-principal;
     }
-    
-    //background-color: $color-principal;
-   // text-align: center;
-  //  font-size: 48px;
-  //  color:wheat;
-  //  position: relative;
-  //  margin-top: 50px;
-
+       
 
  .tituloTres{
-    //text-align: center;
-   // font-size: 48px;
-  //  color:wheat;
-   // position: relative;
-    //font-weight: bold;
-   // margin-top: 50px;
+   
     @extend .tituloUno;
     font-weight: bold;
     background-image: none;
@@ -59,7 +47,7 @@ main section{
         50%{left: 300px;right:300px}
         100%{left: 0px; right:0px}
 
- }
+    }
 }
 
 /* Estilos en Contacto*/
@@ -71,13 +59,17 @@ main section{
     font-size: $tamano;
     color:$color;
 }
+@mixin margen($padin,$margin){
+    padding: $padin;
+    margin:$margin;
+}
+
 .formulario { 
     @include tipografia(sans-serif, 15px, black);
+    @include margen(20px,auto);
     width: 500px;
     background:gray;
-    padding: 20px;
-    margin:auto;
-    margin-top: 70px;
+   
 }
 
 .contacto{ 
@@ -95,3 +87,126 @@ main section{
 }
 
 /*fin estilos para contacto*/
+
+/*Estilos en Servicios*/
+
+.h4-parrafo{
+    @include tipografia(sans-serif,1.5rem ,$color-principal);
+    background-color: $color-secundario4;
+    text-align: justify;
+    font-weight: 500;
+    @include margen(5px,10px )
+    
+    }
+ 
+.sectionOne{
+    @include tipografia(sans-serif,1.5rem ,$color-secundario3 );
+    font-weight: bold;  font-style: oblique;
+    width: 100%;
+    margin: 10px;
+    background-color: $color-secundario4;
+
+}
+
+.tituloCuatro{
+    text-align: left;
+    font-size: 20px;
+    margin:10px;
+
+}
+.sectionTwo .img-fluid { transition: all 2s;  
+ }
+
+.sectionTwo .img-fluid:hover{
+    width: 400px;
+    height: 400px;;
+}
+
+.sectionOne article .divTitulo{
+    font-size: 30px;
+    font-style: normal;
+}
+
+h4{ @include tipografia(sans-serif,2rem ,$color-secundario4 );
+       text-align: center;
+       }
+/*Fin de estilos Servicio*/
+
+/*Quienes somos*/
+h2{ @extend h4;}
+    
+.foto4{padding-top: 40px;
+     margin-left: 60px;
+   }
+
+.parqs1{@include tipografia(sans-serif, 1.5rem,$color-secundario3 );}
+
+//fin de estilo en Quienes Somos
+
+/*--en Noticias--*/
+
+.noticiash1{
+    @include tipografia(helvetica, 2rem,$color-secundario4 );
+    text-align: left  ;
+    font-weight: bold;
+    width: 100%; height: 15;
+    background-color:$color-principal;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.tituloCuatro{
+    @extend .h4-parrafo;
+}
+   //fin de estilo Noticias
+    
+   
+
+.linksnoticias article{text-align: center;}
+
+.linksnoticias article a
+   { @include tipografia(sans-serif, 2rem, $color-principal );
+     text-decoration: none;
+     font-weight: 800;
+    }
+
+    .imgnoti{
+    margin-top: 10px;
+     display: grid;
+     grid-template-columns: auto auto;
+     grid-template-rows: auto;
+     justify-content: space-around;
+    animation-name: animacionoti;
+    animation-duration: 5s;
+    position:relative;
+    animation-iteration-count:2;
+    }
+    @keyframes animacionoti {
+
+        0%{left: 0;top:0px;}
+        25%{left:300px;top:0px}
+        50%{left: 300px;top:300px}
+        75%{left: 0px; top: 300px;}
+        100%{left: 0px; top:0px}
+
+    }
+        
+.tituloTres{
+    @include tipografia(helvetica,2rem ,black );
+    text-align: start;
+    width: 100%; 
+    height: 100px;
+    line-height: 100px;
+
+    }  
+    
+   
+.preguntas{
+        width: 300px;
+        font-family: sans-serif;
+        padding: 20px;
+        margin-top: 50px;
+
+}
+button{ 
+    @include tipografia(sans-serif,2rem ,crimson );
+    }

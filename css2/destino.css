@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/*Estilo gral Index*/
 .gridContainer {
   display: grid;
   height: 100vh;
@@ -35,6 +36,12 @@ footer {
   background-position: center center;
 }
 
+/*fin de estilo gral de Index*/
+body {
+  background-color: darkseagreen;
+}
+
+/*Estilos para NAV en todas las secciones*/
 .header nav ul {
   display: flex;
   list-style: none;
@@ -56,6 +63,7 @@ footer {
   background-color: darkseagreen;
 }
 
+/*fin de estilo de NAV*/
 * {
   margin: 0px;
   padding: 0;
@@ -114,11 +122,10 @@ main section .tituloTres {
   font-family: sans-serif;
   font-size: 15px;
   color: black;
-  width: 500px;
-  background: gray;
   padding: 20px;
   margin: auto;
-  margin-top: 70px;
+  width: 500px;
+  background: gray;
 }
 
 .contacto {
@@ -141,6 +148,152 @@ main section .tituloTres {
 }
 
 /*fin estilos para contacto*/
+/*Estilos en Servicios*/
+.h4-parrafo, .tituloCuatro {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: darkgreen;
+  background-color: lemonchiffon;
+  text-align: justify;
+  font-weight: 500;
+  padding: 5px;
+  margin: 10px;
+}
+
+.sectionOne {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: darkolivegreen;
+  font-weight: bold;
+  font-style: oblique;
+  width: 100%;
+  margin: 10px;
+  background-color: lemonchiffon;
+}
+
+.tituloCuatro {
+  text-align: left;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.sectionTwo .img-fluid {
+  transition: all 2s;
+}
+
+.sectionTwo .img-fluid:hover {
+  width: 400px;
+  height: 400px;
+}
+
+.sectionOne article .divTitulo {
+  font-size: 30px;
+  font-style: normal;
+}
+
+h4, h2 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: lemonchiffon;
+  text-align: center;
+}
+
+/*Fin de estilos Servicio*/
+/*Quienes somos*/
+.foto4 {
+  padding-top: 40px;
+  margin-left: 60px;
+}
+
+.parqs1 {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: darkolivegreen;
+}
+
+/*--en Noticias--*/
+.noticiash1 {
+  font-family: helvetica;
+  font-size: 2rem;
+  color: lemonchiffon;
+  text-align: left;
+  font-weight: bold;
+  width: 100%;
+  height: 15;
+  background-color: darkgreen;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.linksnoticias article {
+  text-align: center;
+}
+
+.linksnoticias article a {
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: darkgreen;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.imgnoti {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-content: space-around;
+  animation-name: animacionoti;
+  animation-duration: 5s;
+  position: relative;
+  animation-iteration-count: 2;
+}
+
+@keyframes animacionoti {
+  0% {
+    left: 0;
+    top: 0px;
+  }
+  25% {
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.tituloTres {
+  font-family: helvetica;
+  font-size: 2rem;
+  color: black;
+  text-align: start;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.preguntas {
+  width: 300px;
+  font-family: sans-serif;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: crimson;
+}
+
 .py-5 {
   background-color: darkseagreen;
   margin-top: 250px;
@@ -157,6 +310,9 @@ main section .tituloTres {
   .tituloDos {
     font-size: 25px;
     margin-top: 50px;
+  }
+  .tituloTres {
+    font-size: 25px;
   }
   .parrafouno {
     font-size: 15px;
@@ -177,16 +333,16 @@ main section .tituloTres {
     background-position: center center;
   }
   .titulo1 {
-    font-size: 45px;
+    font-size: 2.5rem;
   }
   .tituloDos {
-    font-size: 25px;
+    font-size: 6rem;
   }
   .tituloUno, main section .tituloDos, main section .tituloTres {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
   .parrafouno {
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: justify;
   }
   .header nav ul {
@@ -214,7 +370,7 @@ main section .tituloTres {
   h3 {
     font-size: 20px;
   }
-  h4 {
+  h4, h2 {
     font-size: 20px;
     text-align: left;
   }
@@ -234,7 +390,7 @@ main section .tituloTres {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     justify-content: space-around;
-    background-color: lightgray;
+    background-color: darkolivegreen;
   }
 }
 

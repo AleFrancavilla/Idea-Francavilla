@@ -13,8 +13,9 @@ $terciario: map-get($map:$variables, $key: terciario );
     .main{background-color: $principal;}
     .tituloUno{font-size: 40px;}
     .tituloDos{font-size: 25px;
-               margin-top: 50px;}
-   
+              margin-top: 50px;}
+               
+   .tituloTres{font-size: 25px;}
     .parrafouno{ font-size: 15px; 
                   text-align: justify;}
                   
@@ -36,10 +37,10 @@ $terciario: map-get($map:$variables, $key: terciario );
            }
    
    
-       .titulo1{font-size: 45px;}
-       .tituloDos{font-size: 25px;}
-       .tituloUno{font-size:20px;}
-       .parrafouno{ font-size: 20px; 
+       .titulo1{font-size: 2.5rem;}
+       .tituloDos{font-size: 6rem;}
+       .tituloUno{font-size:1.5rem;}
+       .parrafouno{ font-size: 1.5rem; 
                      text-align: justify;}
                      
       .header nav ul{ display: flex;
@@ -91,7 +92,7 @@ $terciario: map-get($map:$variables, $key: terciario );
            grid-template-columns: auto auto auto;
            grid-template-rows:auto auto;
            justify-content: space-around;
-           background-color: $terciario; 
+           background-color: $secundario; 
                 
        }
    
