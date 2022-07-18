@@ -24,35 +24,47 @@
             </ul>
         </nav>
 
-       <!--<a href="#abajo">Ir Abajo</a>-->
-        
+              
     </Header>
-    <main class="container-fluid"> <!--agregue BS container para hacerlo reponsive-->
+    <main class="container-fluid"> 
 
         <h1 class="tituloUno">Graingateway</h1>
         <section>
             <article class="contacto">Contacto</article>
         </section>
-        <section class="datoscontacto">
-            <article>Montevideo</article>
-            <article>Direccion:Dr. Luis Bonavita 125 Codigo Postal: 11300 Montevideo Uruguay </article>
-            <article>Telefono: +598 2626 3800</article>
-            <article>Email: sometext@GGW.com  </article>                           
-        </section>                 
+
+        
+    <div class="contactoContainer">
+      <div class="row">
+        <div class="col">
+          <article class="pais">Argentina</article>
+          <article>Direccion: Reconquista 324 piso 5, CABA, Argentina</article>
+          <article>Telefono: +5411 4325-9018</article>
+          <article>Email: contacto@ggw.com.ar  </article>       
+        </div>
+        <div class="col">
+          <article class="pais">Uruguay</article>
+          <article>Direccion:Dr. Luis Bonavita 125, Montevideo Uruguay </article>
+          <article>Telefono: +598 2626 3800</article>
+          <article>Email: contacto@ggw.com.uy  </article>
+        </div>
+       
+      </div>
+    </div>
                                                                    
                  
-<Section class="formulario">
+<Section class="formularioContainer">
     
-        <form>
-           <h2>Formulario de registro</h2>
+        <form class="form">
+           <h2 class="tituloContacto">Formulario de registro</h2>
             <input class="controls"  type="text" name="nombrecompleto" placeholder="Nombre Completo"><br>
             <input class="controls"  type="text" name="empresa" placeholder="Empresa"><br>
             <input type="email" name="email"placeholder="email" ><br>
-            <input type="password" name="password"placeholder="Clave" >
-            <input type="tel" name="telefono"placeholder="Telefono">
+            <input type="password" name="password"placeholder="Clave" ><br>
+            <input type="tel" name="telefono"placeholder="Telefono"><br>
             <label for="comentarios">Comentarios:</label><br>
-            <textarea name="comentarios"  cols="30" rows="10"></textarea>
-            <input class="botons" type="submit" value="Enviar formulario"/>
+            <textarea name="comentarios"  cols="40" rows="10"></textarea>
+            <input class="botons" type="submit" value="Enviar formulario"/><br>
        </form>
 
     
@@ -62,8 +74,8 @@
     <div class="container">
         <footer class="py-5">
           <div class="row">
-            <div class="col-2">
-              <h3>Section</h3>
+            <div class="col-6">
+              <h3>Sección</h3>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted">Home</a></li>
                 <li class="nav-item mb-2"><a href="servicio.html" class="nav-link p-0 text-muted">Servicios</a></li>
@@ -74,9 +86,9 @@
             </div>
       
                                           
-            <div class="col-4 offset-1">
+            <div class="col-6">
               <form>
-                <h3>Subscríbase a nuestras newsletters</h3>
+                <h3>Suscríbase a nuestras newsletters</h3>
                 <p>Resumen mensual de lo que es nuevo e importante en nuestra industria.</p>
                 <div class="d-flex w-100 gap-2">
                   <label for="newsletter1" class="visually-hidden">Email</label>
@@ -98,18 +110,8 @@
         </footer>
       </div>
     
-    
-    
-    
-    
-    <!--<footer id="abajo">
-        <section>
-            <article> Copy2022 Web Alejandra Francavilla</article>
-    
-            <a href="#arriba">Ir arriba</a>
-        </section>
         
-    </footer>-->
+  
 <!-- Javascrpt de Bootstrap local-->
 <script src="js/bootstrap.js"></script>
 </body>

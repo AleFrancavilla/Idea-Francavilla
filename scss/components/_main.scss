@@ -6,7 +6,6 @@ main .tituloUno{
     font-size: 60px;
     color: wheat;
     width: 100%; 
-    height: 100px;
     background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
 }
             
@@ -65,29 +64,64 @@ main section{
     margin:$margin;
 }
 
-.formulario { 
+.formularioContainer { 
     @include tipografia(sans-serif, 15px, black);
-    @include margen(20px,auto);
-    width: 500px;
-    background:gray;
-   
+    @include margen(10px,auto);
+    width: 90%;
+    max-width: 400px;
+    padding: 3.5em 1,5em;
+    border-radius: 1rem;
+    background-color: $color-principal;
+    
+   }
+
+.form{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: 100%;
+
 }
+
+form input{
+width: 70%;    
+font-family: inherit;
+font-size: 1rem;
+padding: 0.8em;
+border: 2px solid lightslategrey;
+
+}
+
+.tituloContacto{@include tipografia(sans-serif,2rem ,black );
+    font-weight: bold;
+
+}
+
+label{
+    @extend .tituloContacto;
+    }
 
 .contacto{ 
-    @include tipografia(sans-serif, 30px, black);
+    @include tipografia(sans-serif, 40px,$color-principal);
     font-weight: bold;
     text-decoration: solid;
+    text-align: center;
+    text-decoration-line: underline;
 }
-.datoscontacto{
-    @include tipografia(sans-serif,25px , black );
+.contactoContainer{
+    @include tipografia(sans-serif,25px , $color-principal );
     font-weight: bold;
+    }
+.pais{ @include tipografia(sans-serif,35px , black );
+    font-weight: bold;}
 
-}
 .bodycontacto{ 
-    background-color:$color-secundario2;
+    background-image:url(https://img.freepik.com/fotos-premium/campo-soja-verde-periodo-floracion-limpio-enfermedades-plagas-sano_73164-17.jpg?w=1060);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
-
-/*fin estilos para contacto*/
+/*fin estilos Contacto*/
 
 /*Estilos en Servicios*/
 
@@ -115,12 +149,12 @@ main section{
     margin:10px;
 
 }
-.sectionTwo .img-fluid { transition: all 2s;  
+.sectionTwo .img-fluid { transition: all 3s;  
  }
 
 .sectionTwo .img-fluid:hover{
-    width: 400px;
-    height: 400px;;
+    width: 300px;
+    height: 300px;;
 }
 
 .sectionOne article .divTitulo{
@@ -136,13 +170,20 @@ h4{ @include tipografia(sans-serif,2rem ,$color-secundario4 );
 /*Quienes somos*/
 
     
-.foto4{padding-top: 40px;
-     margin-left: 60px;
-   }
+.foto4 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
 
-.parqs1{@include tipografia(sans-serif, 1.5rem,$color-secundario3 );}
+      }
+
+.parqs1{@include tipografia(sans-serif, 1.5rem,$color-secundario3 );
+        
+       }
 .tituloDos{text-align: center;
-font-style: italic;}
+font-style: italic;
+          }
 
 //fin de estilo en Quienes Somos
 
@@ -160,9 +201,6 @@ font-style: italic;}
 .tituloCuatro{
     @extend .h4-parrafo;
 }
-   //fin de estilo Noticias
-    
-   
 
 .linksnoticias article{text-align: center;}
 
@@ -173,26 +211,15 @@ font-style: italic;}
     }
 
     .imgnoti{
-    margin-top: 10px;
+     margin: 20px;
+     padding: 20px;
      display: grid;
      grid-template-columns: auto auto;
      grid-template-rows: auto;
-     justify-content: space-around;
-    animation-name: animacionoti;
-    animation-duration: 5s;
-    position:relative;
-    animation-iteration-count:2;
-    }
-    @keyframes animacionoti {
-
-        0%{left: 0;top:0px;}
-        25%{left:300px;top:0px}
-        50%{left: 300px;top:300px}
-        75%{left: 0px; top: 300px;}
-        100%{left: 0px; top:0px}
-
-    }
-        
+     justify-content: space-around;}
+    
+    
+         
 .tituloTres{
     @include tipografia(helvetica,2rem ,black );
     text-align: start;
