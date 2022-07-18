@@ -25,9 +25,19 @@ $terciario: map-get($map:$variables, $key: terciario );
                    background-color:$terciario;
                 
                 }
- 
+ //Servicios
+ .sectionTwo{
+    background-color: $secundario;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto; 
+    justify-content: space-around;
+    margin-left: 15px;
+            }
+   
 
-        }            
+        }      
+
  
 /*TABLET*/
 @media(min-width: 481px) and (max-width: 1023px){
@@ -76,13 +86,31 @@ $terciario: map-get($map:$variables, $key: terciario );
    h3{font-size: 20px;}
    h4{ font-size: 20px;
        text-align: left;}
-   }
-   
- //Contacto
+
+       //Contacto
  .formularioContainer{
 
     width: fit-content;
     margin-top: 10px;
+   }
+   
+   //Noticias
+   .imgnoti{
+
+    animation-name: animacionoti;
+    animation-duration: 5s;
+    position:relative;
+    animation-iteration-count: 1;
+    }
+    @keyframes animacionoti {
+
+        0%{left: 0;top:0px;}
+        50%{left: 300px;right: 300px;}
+        100%{left: 0px; right:0px}
+       }
+
+
+ 
  }
    /*DESKTOP*/
    @media (min-width: 1024px){
@@ -105,16 +133,16 @@ $terciario: map-get($map:$variables, $key: terciario );
                 
        }
        .imgnoti{
-
-    animation-name: animacionoti;
-    animation-duration: 5s;
-    position:relative;
-    animation-iteration-count: 1;
-    }
+        animation-name: animacionoti;
+        animation-duration: 2s;
+        position:relative;
+        animation-iteration-count: 3;
+        }
+    
     @keyframes animacionoti {
 
         0%{left: 0;top:0px;}
-        50%{left: 120px;right: 120px;}
+        50%{left: 500px;right: 500px;}
         100%{left: 0px; right:0px}
        }
 

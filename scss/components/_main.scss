@@ -66,18 +66,19 @@ main section{
 
 .formularioContainer { 
     @include tipografia(sans-serif, 15px, black);
-    @include margen(10px,auto);
- 
+    @include margen(10px,50px);
     border-radius: 1rem;
     background-color: $color-principal;
-    
+    max-width: 400px;
+    width: 90%;
+
    }
 
 .form{
-    width: 100%;
+    
     display: grid;
     gap: 1rem;
-    grid-auto-columns: 100%;
+    grid-auto-columns: auto1;
 
 }
 
@@ -95,9 +96,7 @@ border: 2px solid lightslategrey;
 
 }
 
-label{
-    @extend .tituloContacto;
-    }
+
 
 .contacto{ 
     @include tipografia(sans-serif, 40px,$color-principal);
@@ -210,13 +209,9 @@ font-style: italic;
 
     .imgnoti{
     @include margen(20px,20px);
-     display: grid;
-     grid-template-columns: auto auto;
-     grid-template-rows: auto;
-     justify-content: space-around;}
     
-    
-         
+    }
+                 
 .tituloTres{
     @include tipografia(helvetica,2rem ,black );
     text-align: start;
@@ -227,13 +222,4 @@ font-style: italic;
     }  
     
    
-.preguntas{
-        width: 300px;
-        font-family: sans-serif;
-        padding: 20px;
-        margin-top: 50px;
 
-}
-button{ 
-    @include tipografia(sans-serif,2rem ,crimson );
-    }
