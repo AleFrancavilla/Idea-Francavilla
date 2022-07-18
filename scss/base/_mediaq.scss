@@ -34,8 +34,10 @@ $terciario: map-get($map:$variables, $key: terciario );
     justify-content: space-around;
     margin-left: 15px;
             }
-   
-
+   .imgnoti{
+    display:flex;
+    justify-content: left;
+   }
         }      
 
  
