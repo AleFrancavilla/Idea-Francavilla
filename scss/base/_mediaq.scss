@@ -104,22 +104,18 @@ $terciario: map-get($map:$variables, $key: terciario );
            background-color: $secundario; 
                 
        }
-       
+       .imgnoti{
 
-    /*Noticias hoy*/
-
-  .imgnoti{animation-name: animacionoti;
-    animation-duration: 3s;
+    animation-name: animacionoti;
+    animation-duration: 5s;
     position:relative;
-    animation-iteration-count:2;
+    animation-iteration-count: 1;
     }
-    @keyframes animacionoti 
-    {
+    @keyframes animacionoti {
 
-        0%{left: 0;top:0px};
-        25%{left:300px;top:0px};
-        50%{left: 300px;top:300px};
-        75%{left: 0px; top: 300px};
-        100%{left: 0px; top:0px}  ; }   
+        0%{left: 0;top:0px;}
+        50%{left: 120px;right: 120px;}
+        100%{left: 0px; right:0px}
+       }
+
    }
-   
